@@ -4,7 +4,7 @@ pipeline {
             label "docker-agent-1"
         }
     }
-    trigger{
+    triggers{
         pollSCM('44 15 * * 5')
     }
     stages {
